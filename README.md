@@ -15,4 +15,6 @@ If you are having trouble with the plugin_interface you might need to use [this 
 
 ### What you should see:
 
-At the end of this tutorial you should be able to get the OpenBCI data and plot it live. The tutorial is meant to help you understand how to use the OpenBCI-Python repo, so if you have any questions feel free to open and issue.
+At the end of this tutorial you should be able to get the OpenBCI data and plot it live like the image below. The tutorial is meant to help you understand how to use the OpenBCI-Python repo, so if you have any questions feel free to open and issue.
+
+![EEG image](https://i.ibb.co/9vRRMpP/EEG-plot.jpg)
