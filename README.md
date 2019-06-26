@@ -1,6 +1,6 @@
 # Plotting live data from Cyton Board using pyOpenBCI and pyqtgraph
 
-This is a very simple way for people starting with the OpenBCI Cyton board to play around with plotting live data, applying some common filters, and getting EEG Bands using the pyOpenBCI repo and pyqtgraph.
+This is a very simple way for people starting with the OpenBCI Cyton board to play around with plotting live data, applying some common filters, and getting EEG Bands using the [pyOpenBCI repo](https://github.com/OpenBCI/pyOpenBCI) and [pyqtgraph](http://www.pyqtgraph.org/).
 
 ## Objective
 1. Use the pyOpenBCI library to aquire data from the OpenBCI board and plot it in real time.
