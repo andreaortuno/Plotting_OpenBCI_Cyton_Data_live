@@ -1,20 +1,26 @@
-# Plotting live data from Cyton Board using Python
+# Plotting live data from Cyton Board using pyOpenBCI and pyqtgraph
 
-This is a very simple way for people starting with the OpenBCI Cyton board to play around with plotting data using the OpenBCI Python repo.
+This is a very simple way for people starting with the OpenBCI Cyton board to play around with plotting live data, applying some common filters, and getting EEG Bands using the pyOpenBCI repo and pyqtgraph.
 
+## Objective
+1. Use the pyOpenBCI library to aquire data from the OpenBCI board and plot it in real time.
+2. Process the OpenBCI data to get the different EEG bands (Alpha, Beta, etc..)
 
-## Notes:
-1. This notebook is being run on a Windonws 10 Laptop, using a Python3 environment. This notebook was also tested on a Linux VM.
-2. After you installed all the [dependencies](http://docs.openbci.com/OpenBCI%20Software/05-OpenBCI_Python) correctly you can start using this tutorial.
-3. This notebook was also tested on a Linux VM. To make it work make sure to also install [bluepy](https://github.com/IanHarvey/bluepy) as part of the requirements. Also change the port name to '/dev/ttyUSB*/'.
+## Why use pyqtgraph?
 
-### Importing necessary packages:
-The packages used for this tutorial are in the [requirements.txt](https://github.com/andreaortuno/Plotting_OpenBCI_Cyton_Data_live/blob/master/requirements.txt) file. You can simply download that file and install the requirements by typing "pip install -r requirements.txt" on the command line.
+From the pyqtgraph website:
 
-If you are having trouble with the plugin_interface you might need to use [this workaround](https://github.com/OpenBCI/OpenBCI_Python/issues/91#issuecomment-412817422).
+"PyQtGraph is a graphics and user interface library for Python that provides functionality commonly required in engineering and science applications. Its primary goals are 1) to provide fast, interactive graphics for displaying data (plots, video, etc.) and 2) to provide tools to aid in rapid application development (for example, property trees such as used in Qt Designer).
+
+For plotting, pyqtgraph is not nearly as complete/mature as matplotlib, but runs much faster. Matplotlib is more aimed toward making publication-quality graphics, whereas pyqtgraph is intended for use in data acquisition and analysis applications."
+
+Because the Cyton Board data comes at a rate of 250Hz, a fast way to display data is needed and pyqtgraph is the way to go.
 
 ### What you should see:
 
-At the end of this tutorial you should be able to get the OpenBCI data and plot it live like the image below. The tutorial is meant to help you understand how to use the OpenBCI-Python repo, so if you have any questions feel free to open and issue.
+At the end of this tutorial you should be able to get the OpenBCI data and plot it live like the image below. You should also be able to apply a notch filter and a bandpass filter to the live OpenBCI data. The tutorial is meant to help you understand how to use the pyOpenBCI repo, so if you have any questions feel free to open and issue.
 
-![EEG image](https://i.ibb.co/9vRRMpP/EEG-plot.jpg)
+![EEG image](GUI_python.JPG)
+
+### Notes:
+1. This notebook is being run on a Windonws 10 Laptop, using a Python3 environment. This notebook was also tested on a Linux VM.
